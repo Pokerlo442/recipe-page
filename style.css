@@ -38,6 +38,12 @@ body{
   width: 100%;
   
 }
+header{  
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 5rem;
+}
 
 .container{
   display: flex;
@@ -176,9 +182,11 @@ ol > .li-item::marker{
 }
 @media (min-width:71.5em) {
   header{   
-    max-width: 50%;   
+    max-width: 50%;  
+    margin-top: 5rem; 
   }
   .container{
     max-width: 50%;
+    margin-bottom: 5rem;
   }
 }
