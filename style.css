@@ -45,6 +45,7 @@ body{
   justify-self: center;  
   padding: 0 2rem;
   background-color: var(--clr-white);
+  margin: auto;
 }
 .margin{
   margin-bottom: 2rem;
