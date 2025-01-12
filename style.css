@@ -183,10 +183,10 @@ ol > .li-item::marker{
 @media (min-width:71.5em) {
   header{   
     max-width: 50%;  
-    margin-top: 5rem; 
+    margin-top: 6rem; 
   }
   .container{
     max-width: 50%;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
 }
