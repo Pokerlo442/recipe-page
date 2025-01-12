@@ -1,0 +1,183 @@
+:root{
+  --clr-stone-100:hsl(30, 54%, 90%);
+  --clr-stone-150:hsl(30, 18%, 87%);
+  --clr-stone-600:hsl(30, 10%, 34%);
+  --clr-stone-900:hsl(24, 5%, 18%);
+  --clr-brown-800:hsl(14, 45%, 36%);
+  --clr-rose-800:hsl(332, 51%, 32%);
+  --clr-rose-50:hsl(330, 100%, 98%);
+  --clr-white:hsl(0, 0%, 100%);
+  --fs-p:1rem;
+
+  --fw-normal:400;
+  --fw-semibold:600;
+  --fw-bold:700;
+}
+@font-face {
+  font-family: 'Young Serif';
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: var(--clr-stone-100);
+}
+.container header{
+  padding: 0;
+}
+.hero-img{
+  width: 100%;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;  
+  padding: 0 2rem;
+  background-color: var(--clr-white);
+}
+.margin{
+  margin-bottom: 2rem;
+}
+.margin-sm{
+  margin-bottom: 1.5rem;
+}
+.margin-xsm{
+  margin-bottom: .75rem;
+}
+.main-header{
+  font-size: 2.25rem;
+  margin-top: 2.25rem;
+  font-weight: var(--fw-normal);
+  font-family: 'Young serif', serif;
+  line-height: 100%; 
+  color: var(--clr-stone-900);
+}
+.text{
+  font-size: var(--fs-p);
+  font-family: 'Outfit', sans-serif;
+  line-height: 150%;
+  color: var(--clr-stone-600);
+  font-weight: var(--fw-normal);
+  
+}
+.prep-box{
+  padding: 1.5rem 1.5rem .25rem 1.5rem;
+  background-color: var(--clr-rose-50);
+  border-radius: 12px;
+}
+.li-parent{
+  margin:1rem 1.3rem;
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+  font-size: var(--fs-p);
+  font-family: 'Outfit', sans-serif;
+  font-weight: var(--fw-bold);
+  color: var(--clr-stone-900);
+  line-height: 150%;
+}
+.li-parent--normal{
+  color: var(--clr-stone-600);
+  font-weight: var(--fw-normal);
+  margin: 1rem 1.3rem 0 1.3rem;
+}
+.li-parent span{
+  color: var(--clr-stone-600);
+  font-weight: var(--fw-bold);
+}
+.li-item::marker{
+  color: var(--clr-brown-800);
+}
+ol > .li-item::marker{
+  font-weight: var(--fw-bold);
+}
+.li-item{
+  padding-left: 1rem;
+}
+.subheader{
+  color: var(--clr-rose-800);
+  font-family: 'Outfit', sans-serif;
+  font-weight: var(--fw-semibold);
+  font-size: 1.25rem;
+}
+.header{
+  color:var(--clr-brown-800);
+  font-family: 'Young serif', sans-serif;
+  font-size: 1.75rem;
+  font-weight: var(--fw-normal);
+}
+.ingredients-box, .instructions-box{
+  border-bottom: 1px solid var(--clr-stone-150);
+}
+.instructions-box{
+  padding-bottom: 2rem;
+  margin-bottom: 1.75rem;
+}
+.text__nutrition{
+  margin-bottom: 1rem;
+}
+.nutrition-box_list{
+  margin-left: 2rem;
+  margin-right: 1rem;
+  font-family: 'Outfit', sans-serif;
+}
+.nutrition-box_list_container{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;  
+  border-bottom: 1px solid var(--clr-stone-150);
+}
+.nutrition-box_list_type{
+  color: var(--clr-stone-600);
+  padding: 1rem 0;
+}
+.nutrition-box_list_amount{
+  color: var(--clr-brown-800);
+  font-weight: var(--fw-bold);  
+  padding: 1rem 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width:48em){
+  header{
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    max-width: 80%;
+    margin: auto;background-color: var(--clr-white);
+    border-radius: 12px 12px 0 0;
+  }
+  .hero-img{
+    border-radius: 12px;
+  }
+  
+.container{
+  max-width: 80%;
+  border-radius: 0 0 12px 12px;
+}
+
+}
+@media (min-width:71.5em) {
+  header{   
+    max-width: 50%;   
+  }
+  .container{
+    max-width: 50%;
+  }
+}
